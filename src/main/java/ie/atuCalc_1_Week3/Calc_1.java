@@ -48,6 +48,11 @@ public class Calc_1 {
                 System.out.println("Invalid operation.");
                 yield 0;
             }
+            // division
+            case "divide" -> {
+                System.out.println("The result is " + (firstNum / secondNum));
+                yield firstNum / secondNum;
+            }
         };
     }
 }
