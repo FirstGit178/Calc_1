@@ -1,6 +1,6 @@
 package ie.atuCalc_1_Week3;
 
-
+import java.util.Scanner;
 
 public class Calc_1 {
 
@@ -9,5 +9,10 @@ public class Calc_1 {
         // 1 Prompt the user for a number
         // 2 Prompt the user for a second number
         // 3 Display the total to the screen
+        Scanner scan1 = new Scanner(System.in);
+        // Please enter first number
+        System.out.println("Please enter a number: ");
+        double firstNum = scan1.nextDouble();
+        System.out.println("You entered " + firstNum);
     }
 }
