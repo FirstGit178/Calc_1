@@ -8,7 +8,8 @@ public class Calc_1 {
         //Tasks to perform
         // 1 Prompt the user for a number
         // 2 Prompt the user for a second number
-        // 3 Display the total to the screen
+        // 3 Prompt for addition function
+        // 4 Display the total to the screen
         Scanner scan1 = new Scanner(System.in);
         // Please enter first number
         System.out.println("Please enter a number: ");
