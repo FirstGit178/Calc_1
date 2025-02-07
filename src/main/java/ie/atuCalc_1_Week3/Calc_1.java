@@ -25,5 +25,24 @@ public class Calc_1 {
         double secondNum = scan1.nextDouble();
         System.out.println("You entered " + secondNum);
 
+        //Please select an operation (add)
+        System.out.print("Choose an operation \n(add): ");
+        String operation = scan1.next();
+
+        //Perform the operation
+        boolean validOperation = true;
+        double result = switch (operation){
+
+            // addition
+            case "add" -> {
+                System.out.println("The result is " + (firstNum + secondNum));
+                yield firstNum + secondNum;
+            }
+            // default if anything except valid option is selected //yield in default case
+            default -> {
+                System.out.println("Invalid operation.");
+                yield 0;
+            }
+        };
     }
 }
