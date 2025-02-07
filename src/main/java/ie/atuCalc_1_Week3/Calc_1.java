@@ -26,7 +26,7 @@ public class Calc_1 {
         System.out.println("You entered " + secondNum);
 
         //Please select an operation (add)
-        System.out.print("Choose an operation \n(add): ");
+        System.out.print("Choose an operation \n(add, subtract, divide, multiply): ");
         String operation = scan1.next();
 
         //Perform the operation
@@ -47,6 +47,11 @@ public class Calc_1 {
             case "divide" -> {
                 System.out.println("The result is " + (firstNum / secondNum));
                 yield firstNum / secondNum;
+            }
+            // multiplication
+            case "multiply" -> {
+                System.out.println("The result is " + (firstNum * secondNum));
+                yield firstNum * secondNum;
             }
             // default if anything except valid option is selected //yield in default case
             default -> {
